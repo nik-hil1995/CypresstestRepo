@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-06T07:07:37.453Z",
+    "end": "2022-02-06T07:07:46.115Z",
+    "duration": 8662,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c64f3cf5-f7b3-4edd-ab3d-18a12f41df45",
+      "title": "",
+      "fullFile": "cypress/integration/GreenKart/test3.js",
+      "file": "cypress/integration/GreenKart/test3.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1b143ae2-4c4f-4bcc-89f2-67f29365fd76",
+          "title": "handling iframes in cypress",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "First test case",
+              "fullTitle": "handling iframes in cypress First test case",
+              "timedOut": null,
+              "duration": 7108,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('BaseUrl') + \"/AutomationPractice/\");\ncy.frameLoaded('#courses-iframe');\ncy.iframe().find('a[href*=\"mentorship\"]').eq(0).click();\ncy.wait(2000);\ncy.iframe().find('h1[class*=\"pricing-title\"]').should('have.length', 2); //testing the color of element\ncy.iframe().find('a[class=\"theme-btn register-btn\"]').should('have.css', 'background-color').and('eq', 'rgb(41, 48, 59)');",
+              "err": {},
+              "uuid": "57d36e19-02f0-4a18-b3d0-c5d38a57c724",
+              "parentUUID": "1b143ae2-4c4f-4bcc-89f2-67f29365fd76",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "57d36e19-02f0-4a18-b3d0-c5d38a57c724"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7108,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.0.1"
+    }
+  }
+}
