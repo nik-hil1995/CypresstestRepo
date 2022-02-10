@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-02-06T07:07:37.453Z",
-    "end": "2022-02-06T07:07:46.115Z",
-    "duration": 8662,
+    "start": "2022-02-08T05:22:37.769Z",
+    "end": "2022-02-08T05:22:45.216Z",
+    "duration": 7447,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,17 +18,17 @@
   },
   "results": [
     {
-      "uuid": "c64f3cf5-f7b3-4edd-ab3d-18a12f41df45",
+      "uuid": "4648b874-5849-4108-8f98-c8cb8c79de4f",
       "title": "",
-      "fullFile": "cypress/integration/GreenKart/test3.js",
-      "file": "cypress/integration/GreenKart/test3.js",
+      "fullFile": "cypress/integration/GreenKart/Test2.js",
+      "file": "cypress/integration/GreenKart/Test2.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "1b143ae2-4c4f-4bcc-89f2-67f29365fd76",
-          "title": "handling iframes in cypress",
+          "uuid": "a21224f4-05f8-47a1-945e-947ba2931119",
+          "title": "Testing the new window",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,31 +36,31 @@
           "tests": [
             {
               "title": "First test case",
-              "fullTitle": "handling iframes in cypress First test case",
+              "fullTitle": "Testing the new window First test case",
               "timedOut": null,
-              "duration": 7108,
+              "duration": 5863,
               "state": "passed",
               "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit(Cypress.env('BaseUrl') + \"/AutomationPractice/\");\ncy.frameLoaded('#courses-iframe');\ncy.iframe().find('a[href*=\"mentorship\"]').eq(0).click();\ncy.wait(2000);\ncy.iframe().find('h1[class*=\"pricing-title\"]').should('have.length', 2); //testing the color of element\ncy.iframe().find('a[class=\"theme-btn register-btn\"]').should('have.css', 'background-color').and('eq', 'rgb(41, 48, 59)');",
+              "code": "cy.visit(Cypress.env(\"BaseUrl\") + \"/AutomationPractice/\");\ncy.get('#opentab').then(function (el) {\n  var value = el.prop('href');\n  cy.visit(value);\n});",
               "err": {},
-              "uuid": "57d36e19-02f0-4a18-b3d0-c5d38a57c724",
-              "parentUUID": "1b143ae2-4c4f-4bcc-89f2-67f29365fd76",
+              "uuid": "1f56c2c7-b124-4ff1-a4e5-1072481609fc",
+              "parentUUID": "a21224f4-05f8-47a1-945e-947ba2931119",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "57d36e19-02f0-4a18-b3d0-c5d38a57c724"
+            "1f56c2c7-b124-4ff1-a4e5-1072481609fc"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7108,
+          "duration": 5863,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

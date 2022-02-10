@@ -6,6 +6,7 @@
     "BaseUrl": "https://rahulshettyacademy.com"
   },
   "projectId": "cf3ghk",
+  "testFiles": "**/*.feature",
     "retries": {
       
       "runMode": 1
