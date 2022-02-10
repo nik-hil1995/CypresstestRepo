@@ -32,7 +32,7 @@ describe('Framework part', () => {
         });
         productPage.getCheckout().click()
         var sum = 0
-        cy.get('tr td:nth-child(4) strong').each(($el, index, $list) => {
+        productPage.getValue().each(($el, index, $list) => {
             var amt = $el.text()
             var res = amt.split(" ")
             res = res[1].trim()

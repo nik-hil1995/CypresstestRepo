@@ -23,6 +23,9 @@ class ProductPage {
   getSuccessAlert() {
     return cy.get('.alert');
   }
+  getValue(){
+    return cy.get('tr td:nth-child(4) strong')
+  }
 
 }
 export default ProductPage
