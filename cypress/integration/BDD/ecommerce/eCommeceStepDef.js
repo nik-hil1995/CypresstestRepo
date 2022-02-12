@@ -9,7 +9,7 @@ Given('I Visit the Website', function () {
     cy.visit(Cypress.env('BaseUrl') + "/angularpractice/")
 })
 
-When('Added item to cart', () => {
+When('Added item to cart', function(){
 
     homePage.getShopTab().click()
     this.data.productName.forEach(function (element) {
