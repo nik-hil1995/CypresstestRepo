@@ -1,10 +1,10 @@
-import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps'
+import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
 import HomePage from '../../../support/PageObjects/HomePage'
 import ProductPage from '../../../support/PageObjects/ProductPage'
 const homePage = new HomePage()
 const productPage = new ProductPage()
 
-
+let name, gender
 Given('I Visit the Website', () => {
     cy.visit(Cypress.env('BaseUrl') + "/angularpractice/")
 })
@@ -56,5 +56,30 @@ Then('select the delivery address and validate thankyou message', () => {
         expect(message.includes('Success')).to.be.true//assertion
     })
 
+
+})
+
+
+//second scenario
+// When I fill the form 
+When('I fill the form', function (dataTable) {
+    name = dataTable.rawTable[1][0]
+    gender = dataTable.rawTable[1][1]
+    homePage.getName().type(name)
+    homePage.getGender().select(gender)
+
+})
+//validate the form behaviour
+Then('validate the form behaviour', function () {
+    homePage.getDataBinding().should('have.value', name)
+    //validation for min length
+    homePage.getName().should('have.attr', 'minlength', 2)
+    //radio button is disabled or not
+    homePage.getEnterprenueRadioButton().should('be.disabled')
+
+
+})
+And('Visit the shop tab', () => {
+    homePage.getShopTab().click()
 
 })

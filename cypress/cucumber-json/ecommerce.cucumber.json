@@ -1,0 +1,140 @@
+[
+  {
+    "description": "    application regression ",
+    "keyword": "Feature",
+    "name": "End to End e-commerce validation",
+    "line": 1,
+    "id": "end-to-end-e-commerce-validation",
+    "tags": [],
+    "uri": "ecommerce.feature",
+    "elements": [
+      {
+        "id": "end-to-end-e-commerce-validation;ecommerce-products-delivery",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Ecommerce products delivery",
+        "tags": [
+          {
+            "name": "@test1",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I Visit the Website",
+            "result": {
+              "status": "passed",
+              "duration": 758000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Added item to cart",
+            "result": {
+              "status": "passed",
+              "duration": 2262000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "validate the total amount",
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "select the delivery address and validate thankyou message",
+            "result": {
+              "status": "passed",
+              "duration": 8675000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-e-commerce-validation;filling-the-form",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Filling the form",
+        "tags": [
+          {
+            "name": "@test2",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I Visit the Website",
+            "result": {
+              "status": "passed",
+              "duration": 582000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "gender"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "nikhil",
+                      "Male"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I fill the form",
+            "result": {
+              "status": "passed",
+              "duration": 380000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "validate the form behaviour",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Visit the shop tab",
+            "result": {
+              "status": "passed",
+              "duration": 243000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

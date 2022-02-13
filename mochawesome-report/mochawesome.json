@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "tests": 2,
+    "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2022-02-12T19:16:52.367Z",
-    "end": "2022-02-12T19:17:06.632Z",
-    "duration": 14265,
-    "testsRegistered": 1,
+    "start": "2022-02-13T12:44:35.996Z",
+    "end": "2022-02-13T12:44:51.007Z",
+    "duration": 15011,
+    "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "774a0814-f42e-4732-9c36-7c48dad2d0eb",
+      "uuid": "067ebbfd-e06c-4586-bc55-04a8c3704fe4",
       "title": "",
       "fullFile": "cypress/integration/BDD/ecommerce.feature",
       "file": "cypress/integration/BDD/ecommerce.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f2805261-f97f-4961-bcb4-5b0f542910f1",
+          "uuid": "4cb5bbad-0932-4712-8efd-9bc49d5dc808",
           "title": "End to End e-commerce validation",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Ecommerce products delivery",
               "fullTitle": "End to End e-commerce validation Ecommerce products delivery",
               "timedOut": null,
-              "duration": 11943,
+              "duration": 11704,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,39 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "a8d90431-9948-41d4-adc9-588d8ac8e58b",
-              "parentUUID": "f2805261-f97f-4961-bcb4-5b0f542910f1",
+              "uuid": "4e5b387c-d326-4053-a59a-9b9d9f2ea91f",
+              "parentUUID": "4cb5bbad-0932-4712-8efd-9bc49d5dc808",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Filling the form",
+              "fullTitle": "End to End e-commerce validation Filling the form",
+              "timedOut": null,
+              "duration": 1193,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "7978bf6d-bf7b-42e4-af9b-dc9a80ca3659",
+              "parentUUID": "4cb5bbad-0932-4712-8efd-9bc49d5dc808",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a8d90431-9948-41d4-adc9-588d8ac8e58b"
+            "4e5b387c-d326-4053-a59a-9b9d9f2ea91f",
+            "7978bf6d-bf7b-42e4-af9b-dc9a80ca3659"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 11943,
+          "duration": 12897,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
