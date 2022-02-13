@@ -3,10 +3,11 @@
   "pageLoadTimeout": 30000,
   "reporter": "mochawesome",
   "env": {
-    "BaseUrl": "https://rahulshettyacademy.com"
+    "BaseUrl": "https://rahulshettyacademy.com",
+    "StagingRWBurl":"https://members-staging.teamrwb.org/"
   },
   "projectId": "cf3ghk",
-  "testFiles": "**/*.feature",
+
   "retries": {
     "runMode": 1
   }
