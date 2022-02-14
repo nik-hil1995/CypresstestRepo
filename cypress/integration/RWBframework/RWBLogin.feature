@@ -5,4 +5,4 @@ Feature: RWB login validation
     Given I am opening the url
     When I entered the credentials and login
     Then  I am redirect to feeds Tab    
-    And After logout i come back to login page 
+    And After logout i come back to login page
