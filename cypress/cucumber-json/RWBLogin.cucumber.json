@@ -1,0 +1,64 @@
+[
+  {
+    "description": "    End to End test for RWB ",
+    "keyword": "Feature",
+    "name": "RWB login validation",
+    "line": 1,
+    "id": "rwb-login-validation",
+    "tags": [],
+    "uri": "RWBLogin.feature",
+    "elements": [
+      {
+        "id": "rwb-login-validation;validate-that-user-login-and-login-successfully",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Validate that user login and login successfully",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am opening the url",
+            "result": {
+              "status": "passed",
+              "duration": 1103000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I entered the credentials and login",
+            "result": {
+              "status": "passed",
+              "duration": 2990000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I am redirect to feeds Tab",
+            "result": {
+              "status": "passed",
+              "duration": 2835000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "After logout i come back to login page",
+            "result": {
+              "status": "failed",
+              "duration": 8161000000,
+              "error_message": "AssertionError: Timed out retrying after 8000ms: Expected to find element: `span.MuiIconButton-label`, but never found it.\n    at MainPage.getSettingBtn (https://members-staging.teamrwb.org/__cypress/tests?p=cypress\\integration\\RWBframework\\RWBLogin.feature:145:17)\n    at Context.eval (https://members-staging.teamrwb.org/__cypress/tests?p=cypress\\integration\\RWBframework\\RWBLogin.feature:71:12)\n    at Context.resolveAndRunStepDefinition (https://members-staging.teamrwb.org/__cypress/tests?p=cypress\\integration\\RWBframework\\RWBLogin.feature:12440:29)\n    at Context.eval (https://members-staging.teamrwb.org/__cypress/tests?p=cypress\\integration\\RWBframework\\RWBLogin.feature:11761:35)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
